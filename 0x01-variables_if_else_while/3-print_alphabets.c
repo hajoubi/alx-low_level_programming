@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
  *main - Entry point
  *Description: 'a program that prints alphabets lowercase and uppercase using putchar'
  *Return: value 0 no problem
 */
+
 int main(void)
 {
     char c;
