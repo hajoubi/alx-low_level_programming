@@ -1,24 +1,27 @@
 #include "main.h"
+
 /**
- * more_numbers - Entry point
- * Description: Prints 10 sets of numbers from 0 to 14, followed by a new line.
- *              Each set is repeated 10 times.
+ * more_numbers - check the code
  *
- * Return: void (no return value)
+ * Return: nothing
  */
+
 void more_numbers(void)
 {
-	int i, j;
+int line;
 
-	for (i = 1; i <= 10; i++)
+	for (line = 0; line <= 9; line++)
 	{
-		for (j = 0; j <= 14; j++)
+		int num;
+
+		for (num = 0; num <= 14; num++)
 		{
-			if (j > 9)
+			if (num > 9)
 			{
-			_putchar(j / 10 + '0');
+				_putchar (num / 10 + 48);
 			}
-			_putchar(j % 10 + '0');
+			_putchar (num % 10 + 48);
 		}
 		_putchar('\n');
 	}
+}
