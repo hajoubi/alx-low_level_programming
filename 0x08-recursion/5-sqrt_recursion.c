@@ -13,11 +13,11 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (actual_sqrt_recursion(n, 0));
+	return (func_needed(n, 0));
 }
 
 /**
- * actual_sqrt_recursion - recurses to find the natural
+ * func_needed - recurses to find the natural
  * square root of a number
  * @n: number to calculate the sqaure root of
  * @r: root
@@ -30,5 +30,5 @@ int func_needed(int n, int r)
 		return (-1);
 	if (r * r == n)
 		return (r);
-	return (actual_sqrt_recursion(n, r + 1));
+	return (func_needed(n, r + 1));
 }
