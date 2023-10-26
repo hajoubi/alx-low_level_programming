@@ -28,5 +28,5 @@ int the_prime(int n, int f)
 		return (1);
 	if (n % f == 0 && f > 0)
 		return (0);
-	return (actual_prime(n, f - 1));
+	return (the_prime(n, f - 1));
 }
