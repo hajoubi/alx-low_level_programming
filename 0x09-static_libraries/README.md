@@ -1,0 +1,1 @@
+c Static librays project
