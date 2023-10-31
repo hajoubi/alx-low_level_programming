@@ -18,7 +18,7 @@ int _strlen(char *s)
 }
 /**
  * _strdup - duplicates a given string.
- * @str2: the string to duplicate.
+ * @str: the string to duplicate.
  * Return: new dup.
  */
 
@@ -34,6 +34,8 @@ char *_strdup(char *str)
 	}
 	size = _strlen(str);
 	str2 = (char*)malloc(size * sizeof(char));
+	if (!str2)
+		return (NULL);
 	for(i=0; i < size; i++)
 	{
 		str2[i] = str[i];
